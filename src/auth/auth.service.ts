@@ -29,6 +29,9 @@ export class AuthService {
       };
     }
 
-    throw new HttpException('', HttpStatus.BAD_REQUEST);
+    throw new HttpException(
+      'tài khoản mật khẩu không đúng!',
+      HttpStatus.BAD_REQUEST,
+    );
   }
 }
